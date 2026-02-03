@@ -7,7 +7,7 @@ This project aims to provide **reproducible, field-oriented model releases** (HE
 
 This repository hosts models and utilities for agricultural applications, including (but not limited to):
 
-- **Weed detection and crop/weed discrimination** ([object detection]([[https://drive.google.com/drive/folders/1bjlbfw3bd9ndsVB1XkNkYGCLnLL-bBYf?usp=sharing](https://ndusbpos-my.sharepoint.com/:f:/g/personal/ahmed_rabia_ndus_edu/IgDKLpzTpid6SKVExzjNa_4pAa6T31DqfG9JrRDw6uaKQdU?e=7Cycro)](https://ndusbpos-my.sharepoint.com/:f:/g/personal/ahmed_rabia_ndus_edu/IgDKLpzTpid6SKVExzjNa_4pAa6T31DqfG9JrRDw6uaKQdU?e=7Cycro)), segmentation)
+- **Weed detection and crop/weed discrimination** ([object detection](https://ndusbpos-my.sharepoint.com/:f:/g/personal/ahmed_rabia_ndus_edu/IgDKLpzTpid6SKVExzjNa_4pAa6T31DqfG9JrRDw6uaKQdU?e=7Cycro), segmentation)
 - **Crop disease and pest detection**
 - **Plant phenotyping** (counting, sizing, growth stage)
 - **Yield-related tasks** (fruit detection, counting)
