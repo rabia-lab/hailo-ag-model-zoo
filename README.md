@@ -1,66 +1,137 @@
 # Hailo Ag Model Zoo
 
-**Deployment-ready edge AI models for precision agriculture**
+[![Agriculture](https://img.shields.io/badge/Application-Precision%20Agriculture-green)]()
+[![Edge AI](https://img.shields.io/badge/Edge%20AI-Hailo--8%2F8L-blue)]()
+[![Model Format](https://img.shields.io/badge/Model%20Format-HEF-orange)]()
+[![Status](https://img.shields.io/badge/Status-Active%20Development-lightgrey)]()
 
-The **Hailo Ag Model Zoo** is an open, agriculture-focused repository developed to support practical deployment of deep learning models on low-power edge AI hardware, especially Hailo accelerators such as the **Hailo-8** and **Hailo-8L**.
+## Overview
 
-This initiative was created to help researchers, engineers, and agricultural technology developers move beyond model training and toward real-world deployment. The repository provides hardware-ready model artifacts, inference scripts, evaluation guidance, and documentation for agricultural perception tasks such as weed detection, crop monitoring, plant phenotyping, disease detection, and robotic field operations.
+**Hailo Ag Model Zoo** is a deployment-focused repository for agricultural AI models optimized for **Hailo edge AI accelerators**, including **Hailo-8** and **Hailo-8L**.
 
-The first release of this repository is connected to our published study:
+The goal of this repository is to support practical, reproducible, and field-oriented deployment of deep learning models in precision agriculture. Instead of only sharing trained models, this repository is designed to provide complete model packs that include compiled **Hailo Executable Format (HEF)** files, metadata, inference scripts, evaluation outputs, and documentation needed to run agricultural AI models on edge devices.
 
-**“Enabling scalable and energy-efficient weed detection using data-driven edge AI for precision agriculture”**  
-Published in *Frontiers in Agronomy*, 2026  
-DOI: `10.3389/fagro.2026.1808404`
+This initiative was developed as part of our broader research on scalable and energy-efficient edge AI for precision agriculture.
+
+The first model pack in this repository is based on our published paper:
+
+> **Enabling scalable and energy-efficient weed detection using data-driven edge AI for precision agriculture**  
+> *Frontiers in Agronomy*, 2026  
+> DOI: [10.3389/fagro.2026.1808404](https://www.frontiersin.org/journals/agronomy/articles/10.3389/fagro.2026.1808404/full)
+
+The paper presents a deployment-oriented evaluation of YOLO-based weed detection models under realistic edge-AI conditions, focusing on the trade-offs among detection accuracy, inference latency, throughput, and energy efficiency.
 
 ---
 
-## Why This Repository?
+## Repository Objectives
 
-Deep learning models are widely used in precision agriculture, but many models remain difficult to deploy in real field conditions because of hardware limitations, latency, power consumption, and reproducibility challenges.
+The **Hailo Ag Model Zoo** is intended to help researchers, students, and developers move agricultural computer vision models from offline training environments to real edge-AI deployment.
 
-The **Hailo Ag Model Zoo** aims to address this gap by providing:
+The repository focuses on:
 
-- Deployment-ready **Hailo Executable Format (HEF)** models
-- Practical inference scripts for edge devices
-- Clear documentation of model architecture, training, export, and compilation steps
-- Evaluation protocols that consider both accuracy and deployment performance
-- A reusable structure for future agriculture AI model releases
-
-The long-term goal is to support scalable, energy-efficient, and reproducible edge AI solutions for agricultural systems.
+- Providing deployment-ready **HEF models** for Hailo accelerators
+- Supporting reproducible inference on edge devices
+- Sharing metadata and documentation for each model pack
+- Reporting both model accuracy and deployment performance
+- Encouraging reusable model releases for agricultural robotics and precision agriculture
+- Reducing the gap between AI model development and field implementation
 
 ---
 
 ## Current Model Pack
 
-### Crop–Weed Detection
+### Crop–Weed Detection Model Pack
 
-The first model pack focuses on **multi-class crop and weed detection** using field imagery.
+The first release focuses on **multi-class crop and weed detection** using YOLO-based object detection models.
 
-This model pack includes YOLO-based object detection models trained for agricultural crop–weed discrimination and compiled for deployment on Hailo edge accelerators.
+This model pack includes models trained for crop–weed discrimination and compiled for Hailo-based edge deployment.
 
-**Task:**  
-Multi-class object detection for crops and weeds
+| Item | Description |
+|---|---|
+| Task | Multi-class crop and weed detection |
+| Model type | Object detection |
+| Model families | YOLOv8, YOLOv10, YOLOv11 |
+| Original format | PyTorch `.pt` |
+| Intermediate format | ONNX |
+| Deployment format | Hailo Executable Format `.hef` |
+| Target hardware | Raspberry Pi 5 + Hailo-8L AI Kit |
+| Application | Edge AI weed detection for precision agriculture |
 
-**Model families:**  
-YOLOv8, YOLOv10, and YOLOv11 variants
+### Model Files
 
-**Deployment format:**  
-PyTorch model → ONNX → Hailo Executable Format (HEF)
+The current crop–weed detection model files can be accessed here:
 
-**Target hardware:**  
-Raspberry Pi 5 + Hailo-8L AI accelerator
+[Crop–Weed Detection Models](https://ndusbpos-my.sharepoint.com/:f:/g/personal/ahmed_rabia_ndus_edu/IgDKLpzTpid6SKVExzjNa_4pAa6T31DqfG9JrRDw6uaKQdU?e=7Cycro)
 
-**Evaluation focus:**  
+> Note: Large model files are hosted externally to keep this GitHub repository lightweight. Please download the required HEF model files before running inference.
 
-- Detection accuracy
-- Precision, recall, and F1-score
-- IoU and Dice coefficient
-- mAP-based object detection metrics
-- Inference latency
-- Throughput
-- Energy efficiency
+---
 
-**Model pack location:**
+## Supported Applications
+
+Although the first model pack focuses on crop–weed detection, this repository is designed to support additional agricultural AI tasks in future releases, including:
+
+- Weed detection and crop–weed discrimination
+- Crop disease and pest detection
+- Plant phenotyping
+- Fruit detection and counting
+- Yield-related visual analytics
+- Produce quality assessment
+- Livestock monitoring
+- UAV and remote sensing inference
+- Robotic perception for field operations
+
+---
+
+## Repository Principles
+
+This repository follows several core principles:
+
+1. **Deployment-first model release**  
+   Models should be prepared for real edge-AI deployment, not only offline evaluation.
+
+2. **Reproducibility**  
+   Each model pack should include enough information to reproduce the training, export, compilation, and inference workflow.
+
+3. **Transparent evaluation**  
+   Model performance should be reported using both accuracy-based metrics and deployment-oriented metrics.
+
+4. **Hardware-aware benchmarking**  
+   Edge-AI performance should include latency, throughput, and energy-efficiency considerations whenever possible.
+
+5. **Responsible data sharing**  
+   Datasets are not redistributed unless the original license allows redistribution. When datasets cannot be shared, links and preparation instructions should be provided.
+
+---
+
+## Requirements
+
+The repository is designed for Hailo-based edge-AI deployment. Requirements may vary depending on the device, operating system, and Hailo software version.
+
+### Hardware Requirements
+
+Recommended hardware:
+
+- Raspberry Pi 5
+- Hailo-8L AI Kit or compatible Hailo accelerator
+- MicroSD card or SSD with sufficient storage
+- Camera, image folder, or video input source
+- Stable power supply for Raspberry Pi and Hailo hardware
+
+### Software Requirements
+
+Recommended software environment:
+
+- Python 3.x
+- OpenCV
+- GStreamer
+- HailoRT
+- Hailo Python bindings
+- Hailo application examples / `hailo_apps` package
+- NumPy
+- Required packages listed in `requirements.txt`
+
+Install Python dependencies using:
 
 ```bash
-models/crop_weed_detection/
+pip install -r requirements.txt
