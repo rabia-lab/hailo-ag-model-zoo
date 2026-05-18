@@ -135,3 +135,17 @@ Install Python dependencies using:
 
 ```bash
 pip install -r requirements.txt
+
+
+### BibTeX
+
+```bibtex
+@article{salem2026edgeaiweed,
+  title={Enabling scalable and energy-efficient weed detection using data-driven edge AI for precision agriculture},
+  author={Salem, Mohamed Abdallah and Rabia, Ahmed Harb},
+  journal={Frontiers in Agronomy},
+  volume={8},
+  pages={1808404},
+  year={2026},
+  doi={10.3389/fagro.2026.1808404}
+}
