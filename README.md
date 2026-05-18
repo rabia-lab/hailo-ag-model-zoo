@@ -1,49 +1,66 @@
-# Hailo Ag Model Zoo (Agriculture Model Repository)
+# Hailo Ag Model Zoo
 
-A community-oriented repository of **deployment-ready AI models for agriculture** optimized for **Hailo edge accelerators** (e.g., Hailo-8 / Hailo-8L).  
-This project aims to provide **reproducible, field-oriented model releases** (HEF + metadata + evaluation scripts) for agricultural perception and decision-support tasks.
+**Deployment-ready edge AI models for precision agriculture**
 
-## Scope
+The **Hailo Ag Model Zoo** is an open, agriculture-focused repository developed to support practical deployment of deep learning models on low-power edge AI hardware, especially Hailo accelerators such as the **Hailo-8** and **Hailo-8L**.
 
-This repository hosts models and utilities for agricultural applications, including (but not limited to):
+This initiative was created to help researchers, engineers, and agricultural technology developers move beyond model training and toward real-world deployment. The repository provides hardware-ready model artifacts, inference scripts, evaluation guidance, and documentation for agricultural perception tasks such as weed detection, crop monitoring, plant phenotyping, disease detection, and robotic field operations.
 
-- **Weed detection and crop/weed discrimination** ([object detection](https://ndusbpos-my.sharepoint.com/:f:/g/personal/ahmed_rabia_ndus_edu/IgDKLpzTpid6SKVExzjNa_4pAa6T31DqfG9JrRDw6uaKQdU?e=7Cycro), segmentation)
-- **Crop disease and pest detection**
-- **Plant phenotyping** (counting, sizing, growth stage)
-- **Yield-related tasks** (fruit detection, counting)
-- **Livestock monitoring** (detection, tracking)
-- **Quality assessment** (e.g., produce grading, defect detection)
-- **Remote sensing / UAV inference** (lightweight detectors for onboard compute)
+The first release of this repository is connected to our published study:
 
-Models are released in **Hailo Executable Format (HEF)** whenever possible, with optional ONNX/PT checkpoints for transparency and reproducibility.
+**“Enabling scalable and energy-efficient weed detection using data-driven edge AI for precision agriculture”**  
+Published in *Frontiers in Agronomy*, 2026  
+DOI: `10.3389/fagro.2026.1808404`
 
 ---
 
-## Repository Principles
+## Why This Repository?
 
-1. **Deployment-first**: every model release must be runnable on real edge hardware.
-2. **Reproducibility**: training and compilation steps must be documented.
-3. **Fair evaluation**: metrics and test protocols must be clearly stated.
-4. **Clear licensing**: models and code must have explicit usage terms.
-5. **No dataset redistribution** unless the dataset license explicitly allows it.
+Deep learning models are widely used in precision agriculture, but many models remain difficult to deploy in real field conditions because of hardware limitations, latency, power consumption, and reproducibility challenges.
 
----
+The **Hailo Ag Model Zoo** aims to address this gap by providing:
 
-## Current Model Packs
+- Deployment-ready **Hailo Executable Format (HEF)** models
+- Practical inference scripts for edge devices
+- Clear documentation of model architecture, training, export, and compilation steps
+- Evaluation protocols that consider both accuracy and deployment performance
+- A reusable structure for future agriculture AI model releases
 
-### 1) Crop–Weed Detection (Object Detection)
-- Task: multi-class crop/weed detection (bounding boxes)
-- Models: YOLOv8 / YOLOv10 / YOLOv11 variants (PT → ONNX → HEF)
-- Hardware target: Raspberry Pi 5 + Hailo-8L (AI Kit)
-- Metrics: Precision, Recall, F1, IoU, Dice + latency + throughput + efficiency
-- Pack location: `models/crop_weed_detection/`
-
-> This is the first contributed pack and serves as the reference template for future packs.
+The long-term goal is to support scalable, energy-efficient, and reproducible edge AI solutions for agricultural systems.
 
 ---
 
-## Quick Start (Running a HEF model)
+## Current Model Pack
 
-1) Install runtime dependencies (host + device requirements may differ):
+### Crop–Weed Detection
+
+The first model pack focuses on **multi-class crop and weed detection** using field imagery.
+
+This model pack includes YOLO-based object detection models trained for agricultural crop–weed discrimination and compiled for deployment on Hailo edge accelerators.
+
+**Task:**  
+Multi-class object detection for crops and weeds
+
+**Model families:**  
+YOLOv8, YOLOv10, and YOLOv11 variants
+
+**Deployment format:**  
+PyTorch model → ONNX → Hailo Executable Format (HEF)
+
+**Target hardware:**  
+Raspberry Pi 5 + Hailo-8L AI accelerator
+
+**Evaluation focus:**  
+
+- Detection accuracy
+- Precision, recall, and F1-score
+- IoU and Dice coefficient
+- mAP-based object detection metrics
+- Inference latency
+- Throughput
+- Energy efficiency
+
+**Model pack location:**
+
 ```bash
-pip install -r requirements.txt
+models/crop_weed_detection/
