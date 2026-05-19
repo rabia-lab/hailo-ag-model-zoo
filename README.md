@@ -141,8 +141,8 @@ pip install -r requirements.txt
 
 ```bash
 python run.py \
-  --hef models/crop_weed_detection/hef/yolov11n.hef \
-  --input data/sample_images/
+  --hef yolov11n.hef \
+  --input sample_images/
 ```
 
 
