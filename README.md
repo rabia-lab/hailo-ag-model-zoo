@@ -160,6 +160,11 @@ python run.py \
 }
 ```
 
+This repository uses the Hailo application pipeline style and should be used with a properly configured Hailo software environment. Users who are new to Hailo deployment are encouraged to first review the official Hailo Raspberry Pi 5 examples and the newer Hailo Apps repository:
+
+- [Hailo Raspberry Pi 5 Examples](https://github.com/hailo-ai/hailo-rpi5-examples/tree/main)
+- [Hailo Apps](https://github.com/hailo-ai/hailo-apps)
+
 ## Acknowledgment of Hailo Examples
 
 This repository builds on the public Hailo Raspberry Pi 5 example ecosystem and follows the general structure of Hailo’s edge-AI deployment examples.
