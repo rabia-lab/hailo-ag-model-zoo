@@ -158,3 +158,22 @@ python run.py \
   year={2026},
   doi={10.3389/fagro.2026.1808404}
 }
+```
+
+## Acknowledgment of Hailo Examples
+
+This repository builds on the public Hailo Raspberry Pi 5 example ecosystem and follows the general structure of Hailo’s edge-AI deployment examples.
+
+In particular, our inference workflow was developed with reference to the official Hailo Raspberry Pi 5 examples repository:
+
+[Hailo Raspberry Pi 5 Examples](https://github.com/hailo-ai/hailo-rpi5-examples/tree/main)
+
+The Hailo Raspberry Pi 5 examples provide reference pipelines for running AI models on Raspberry Pi 5 with Hailo AI accelerators, including support for the Raspberry Pi AI Kit, AI HAT, Hailo-8, and Hailo-8L devices. These examples provide a useful foundation for building custom edge-AI applications.
+
+Our repository extends this direction toward **precision agriculture** by providing agriculture-specific model packs, documentation, and inference outputs for crop–weed detection and future agricultural AI tasks.
+
+Please note that the Hailo Raspberry Pi 5 examples repository currently points users to the newer Hailo Apps repository for more up-to-date examples:
+
+[Hailo Apps](https://github.com/hailo-ai/hailo-apps)
+
+We gratefully acknowledge Hailo’s open-source examples, documentation, and community resources, which helped support the development of this agriculture-focused model zoo.
