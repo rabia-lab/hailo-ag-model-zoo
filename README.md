@@ -182,3 +182,28 @@ Please note that the Hailo Raspberry Pi 5 examples repository currently points u
 [Hailo Apps](https://github.com/hailo-ai/hailo-apps)
 
 We gratefully acknowledge Hailo’s open-source examples, documentation, and community resources, which helped support the development of this agriculture-focused model zoo.
+
+## License
+
+This repository is released for research and educational use.
+
+Unless otherwise stated, the source code, documentation, and example scripts in this repository are provided under the **MIT License**.
+
+The trained and compiled model files, including Hailo Executable Format `.hef` files, are provided for non-commercial research, education, and evaluation purposes. Users are responsible for ensuring that any use of the models, datasets, or deployment outputs complies with the licenses and terms of the original datasets, model frameworks, and third-party tools.
+
+Datasets are not redistributed in this repository unless redistribution is explicitly permitted by the original dataset license. When datasets cannot be shared directly, links and preparation instructions are provided instead.
+
+This repository builds on and references publicly available Hailo examples and tools. Users should also follow the licensing terms of HailoRT, Hailo Apps, Hailo Raspberry Pi 5 examples, Ultralytics YOLO, OpenCV, GStreamer, and any other third-party software used in the deployment pipeline.
+
+Please cite the associated paper when using this repository in academic work:
+
+```bibtex
+@article{salem2026edgeaiweed,
+  title={Enabling scalable and energy-efficient weed detection using data-driven edge AI for precision agriculture},
+  author={Salem, Mohamed Abdallah and Rabia, Ahmed Harb},
+  journal={Frontiers in Agronomy},
+  volume={8},
+  pages={1808404},
+  year={2026},
+  doi={10.3389/fagro.2026.1808404}
+}
