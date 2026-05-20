@@ -187,7 +187,7 @@ We gratefully acknowledge Hailo’s open-source examples, documentation, and com
 
 This repository is released for research and educational use.
 
-Unless otherwise stated, the source code, documentation, and example scripts in this repository are provided under the **MIT License**.
+Unless otherwise stated, the source code, documentation, and example scripts in this repository are provided under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 The trained and compiled model files, including Hailo Executable Format `.hef` files, are provided for non-commercial research, education, and evaluation purposes. Users are responsible for ensuring that any use of the models, datasets, or deployment outputs complies with the licenses and terms of the original datasets, model frameworks, and third-party tools.
 
