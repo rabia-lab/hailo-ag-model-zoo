@@ -90,7 +90,7 @@ This figure shows the average class-wise AP@0.5 performance for PyTorch and HEF 
 
 ## Analysis of HEF Conversion Effects
 
-![]([https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure8.png](https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure6.png))
+![](https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure6.png)
 
 ### Detection Examples
 
