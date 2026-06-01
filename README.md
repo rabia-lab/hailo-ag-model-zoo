@@ -74,13 +74,13 @@ The following figures show example deployment results from the current crop–we
 
 The figure below compares the inference speedup obtained when running the compiled Hailo Executable Format `.hef` models compared with the original PyTorch `.pt` models.
 
-![Inference speedup between PyTorch and HEF models](figures/inference_speedup_pt_vs_hef.png)
+![Inference speedup between PyTorch and HEF models](https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure10.png)
 
 ### Detection Examples
 
 The figure below shows representative crop–weed detection outputs from selected HEF models compared with the ground-truth annotations.
 
-![Ground-truth and HEF model prediction examples](figures/hef_prediction_examples.png)
+![Ground-truth and HEF model prediction examples](https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure16.png)
 
 ---
 
