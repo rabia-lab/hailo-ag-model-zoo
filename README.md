@@ -80,17 +80,17 @@ The figure below compares the inference speedup obtained when running the compil
 
 This figure compares the mean F1-score with 95% confidence intervals for the original PyTorch `.pt` models and the compiled Hailo `.hef` models.
 
-![Bootstrap F1-score comparison between PT and HEF models](figures/bootstrap_f1_pt_vs_hef.png)
+![Bootstrap F1-score comparison between PT and HEF models](https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure3.png)
 
 ### Class-wise Detection Performance
 
 This figure shows the average class-wise AP@0.5 performance for PyTorch and HEF models, along with the observed HEF-induced performance change for each crop and weed class.
 
-![Class-wise AP performance and HEF-induced degradation](figures/classwise_ap_degradation_pt_vs_hef.png)
+![Class-wise AP performance and HEF-induced degradation](https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure8.png)
 
 ## Analysis of HEF Conversion Effects
 
-
+![]([https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure8.png](https://github.com/rabia-lab/hailo-ag-model-zoo/blob/main/Figure6.png))
 
 ### Detection Examples
 
