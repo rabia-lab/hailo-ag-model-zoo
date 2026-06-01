@@ -65,6 +65,23 @@ The current crop–weed detection model files can be accessed here:
 
 > Note: Large model files are hosted externally to keep this GitHub repository lightweight. Please download the required HEF model files before running inference.
 
+
+## Example Results
+
+The following figures show example deployment results from the current crop–weed detection model pack.
+
+### Inference Speedup
+
+The figure below compares the inference speedup obtained when running the compiled Hailo Executable Format `.hef` models compared with the original PyTorch `.pt` models.
+
+![Inference speedup between PyTorch and HEF models](figures/inference_speedup_pt_vs_hef.png)
+
+### Detection Examples
+
+The figure below shows representative crop–weed detection outputs from selected HEF models compared with the ground-truth annotations.
+
+![Ground-truth and HEF model prediction examples](figures/hef_prediction_examples.png)
+
 ---
 
 ## Supported Applications
